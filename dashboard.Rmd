@@ -1,0 +1,71 @@
+---
+title: "NY NOAA Flexdashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(viridis)
+library(p8105.datasets)
+library(plotly)
+```
+
+```{r}
+data("ny_noaa")
+noaa_df <- ny_noaa %>%
+  separate(date, into = c("year", "month", "day"), convert = TRUE) %>%
+  mutate(
+    tmax = as.numeric(tmax),
+    tmin = as.numeric(tmin),
+    prcp = prcp/10,
+    tmax = tmax/10,
+    tmin = tmin/10
+    ) 
+```
+-----------------------------------------------------------------------
+
+### Precipitation in Altamount, New York
+
+```{r}
+noaa_df %>% 
+  filter(id == "US1NYAB0001") %>%
+  group_by(year, month) %>%
+  summarise(mean_prcp = mean(prcp), na.rm = TRUE) %>% 
+  drop_na(mean_prcp) %>%
+  ungroup %>%
+  mutate(text_label = str_c("Year: ", year,"\nMonth: ", month,"\nMean Precipitation: ", mean_prcp)) %>% 
+  plot_ly(x = ~month, y = ~mean_prcp, type = "scatter", mode = "markers",
+          alpha = .5, color = ~year, 
+          text = ~text_label)
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Distributions of Precipitation by Year
+
+```{r }
+noaa_df %>%
+  sample_n(3000, replace = FALSE) %>% 
+  filter(prcp > 0) %>%
+  mutate(text_label = str_c("Year: ", year, "\nPrecipitation: ", prcp)) %>% 
+  plot_ly(x = ~year, y = ~prcp, color = ~year, type = "box", 
+          text = ~text_label)
+```
+
+### Maximum Precipitation Reported by Year
+
+```{r}
+noaa_df %>%
+  sample_n(3000, replace = FALSE) %>% 
+  group_by(year) %>% 
+  summarize(max_prcp = max(prcp)) %>% 
+  drop_na(max_prcp) %>%
+  mutate(text_label = str_c("Year: ", year, "\nMaximum Snowfall: ", max_prcp)) %>% 
+  plot_ly(x = ~year, y = ~max_prcp, color = ~year, type = "bar",
+          text = ~text_label)
+```

@@ -9,8 +9,11 @@ navbar:
       href: mailto:<cynthialiu823@gmail.com>
     - icon: fa-github fa-lg
       href: http://github.com/cynthialiu208/
+    - text: "Flex Dashboard"
+      href: dashboard.html
     - text: "LinkedIn"
       href: https://www.linkedin.com/in/cynthia-liu-9227bb143/
+      
     
 output:
   html_document
