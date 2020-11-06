@@ -1,19 +1,99 @@
 ---
-title: "About me"
+title: "About Me"
 output: 
   html_document:
     toc: true
     toc_float: true
     theme: cerulean
 ---
+## Goals & Passions
 
-# This page has information about me
+I'm a public health student with a background in Bioengineering and Computer Science interested in applications of machine learning, data analytics, and bioinformatics that can streamline healthcare systems and improve medical technology. I'm passionate about data-driven decisions, Python, and making STEM education equitable and approachable. 
 
-I teach p8105.
----
+## Education
 
-### About this site
+#### **Columbia University, Mailman School of Public Health**
 
-Sometimes you need to say a bit about the site -- how it was made, where it's hosted, where the source code can be found. 
+Master of Public Health in Epidemiology with Applied Biostatistics	Certificate (Graduation: Expected 2021)
 
-If this is for a project or analysis, I recommend giving some details about the R package versions that you used to create the content.
+#### **University of Illinois at Urbana-Champaign**
+
+Bachelor of Science in Bioengineering - Computational and Systems Biology & Computer Science Minor (Graduation: 2015)
+
+
+
+## Career
+
+After graduation, I'll be joining a management consulting firm, McKinsey & Company, at their Chicago office as a business analyst. I eventually hope to go to medical school and work at the intersection of healthcare, technology, & business.
+
+My prior experience includes:
+
+#### **Medidata Solutions/Acorn AI**
+
+Medidata Institute Intern (July 2020 - present):
+
+* Leveraging real-world pharmaceutical data repositories to increase R&D efficiency and accelerate clinical trial timelines
+
+#### **Columbia Medical Center/NY Psychiatric Institute**
+
+Data Science Scholar, Javitch molecular therapeutics lab (February 2020 - present)
+
+* Training artificial intelligence models for prediction of dopamine receptor trajectory in single cells
+* Using unsupervised clustering methods to discern biologically relevant parameters for classifying molecule movement
+
+#### **Carle Biomedical Research Center**
+
+Research assistant, Bashir Lab (November 2016 - May 2019)
+
+* Contributed to design, construction, and testing of novel point-of-care microfluidic Coulter counter sepsis diagnostic device
+
+#### **AbbVie Clinical Trial Operations**
+
+Data & Statistical Sciences Intern (June 2018-August 2018)
+
+* Designed Spotfire analytic dashboards and wrote R quality control scripts to support ongoing clinical trials
+* Won intern innovation competition by building database for clinical trial IRB legal language using ReactJS and MongoDB
+
+#### **Tempus Labs**
+
+Clinical Decision Support Intern (May 2017-August 2017)
+
+* Implemented clinical trial database and algorithm improvement initiatives to minimize clinical report turnover times
+* Analyzed clinical and sequencing data to recommend targeted therapies and clinical trials to oncology patients
+
+
+
+## Teaching 
+
+#### **Columbia University Mailman School of Public Health**
+
+Graduate Teaching Assistant (July 2020 - present)
+
+* TA for P8100: Applied Regression I and P8120: Analysis of Categorical Data
+
+#### **Kaplan Test Prep**
+
+MCAT (Medical College Admission Test) Instructor & Tutor (July 2019-present)
+
+* Diagnosing areas of opportunity to maximize score increases in a limited test preparation period
+* Building personalized curriculums for 3 classes of 10-20 students and for 30+ personal tutoring students
+
+#### **University of Illinois at Urbana-Champaign**
+
+Bioengineering & Computer Science Undergraduate Teaching Assistant
+
+* TA for CS 498:Virtual Reality and BIOE 210: Linear Algebra for Biomedical Data Science
+
+
+
+## Personal Interests
+
+#### **Knitting**
+
+* Amateur knitter - currently finishing my first sweater! 
+
+#### **Professional Gaming**
+
+* Proud fan of the LCS and LEC (League of Legends) - favorites are Team Solomid & Fnatic
+* Getting into the professional Valorant scene - Sentinels fan
+
